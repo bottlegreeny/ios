@@ -20,5 +20,8 @@
  @param note a string, representing a desired ransom note
  @return flag indicating if a magazine can be used for a ransom note, YES or NO
  */
+@property (nonatomic, retain) NSCountedSet *setOfMagazineStrings;
+@property (nonatomic, retain) NSCountedSet *setOfNoteStrings;
+
 - (BOOL)checkMagazine:(NSString *)magaine note:(NSString *)note;
 @end
